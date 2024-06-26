@@ -19,3 +19,7 @@ table, th, td {
   button{
     border-radius: 10px;
   }
+  th{
+    min-width: 150px;
+  }
+  

@@ -9,25 +9,36 @@
   <body>
     <h2>Company</h2>
     <hr />
-    
+    <div>
+      <div>
       <label><b>First Name</b></label
       ><br />
-      <input type="text" class="Entry" id="mytext" /><br />
+      <input type="text" class="Entry" id="fname" />
+     </div>
+     <div>
       <label><b>Last Name</b></label
       ><br />
-      <input type="text" class="Entry" /><br />
+      <input type="text" class="Entry" id="lname" />
+    </div>
+    <div>
       <label><b>Gender</b></label>
-      <input type="radio" /> male <input type="radio" />female<br />
+      <input type="radio" name="Gender" value="male"/><label>male </label>
+      <input type="radio" name="Gender" value="female" /><label>female</label>
+    </div>
+    <div>
       <label><b>City</b></label>
-      <select>
-        <option></option>
-        <option>Delhi</option>
-        <option>Banglore</option>
-        <option>Hydrabad</option></select
+      <select id="city">
+        <option value="null"></option>
+        <option value="Delhi">Delhi</option>
+        <option value="Banglore">Banglore</option>
+        <option value="Hydrabad">Hydrabad</option></select
       ><br />
+    </div>
+    <div>
       <button onclick="myFunction()">Click</button>
-    
-    <table>
+    </div>
+      </div>
+    <table id="table">
       <tr>
         <th>First Name &nbsp</th>
         <th>Last Name&nbsp</th>
@@ -35,10 +46,7 @@
         <th>City&nbsp</th>
       </tr>
     </table>
-    <script>
-    function myFunction() {
-  document.getElementById("mytext").value = "Johnny Bravo";
-}
+    <script src="index.js">
     </script>
   </body>
 </html>
